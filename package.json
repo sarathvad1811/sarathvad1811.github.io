@@ -1,0 +1,34 @@
+{
+  "name": "violet-port",
+  "version": "1.0.0",
+  "description": "A React.js Next.js portfolio application",
+  "private": true,
+  "type": "module",
+  "homepage": "https://sarathvad1811.github.io/sarathvad1811.github.io",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out --nojekyll"
+  },
+  "dependencies": {
+    "lucide-react": "^0.408.0",
+    "next": "^14.1.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.55.0",
+    "eslint-config-next": "^14.1.0",
+    "gh-pages": "^6.3.0",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.3.3"
+  }
+}
