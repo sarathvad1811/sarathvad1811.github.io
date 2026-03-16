@@ -1,52 +1,58 @@
-# Violet Port - Portfolio
+# Sarath Vadlamannati
 
-A modern React/Next.js portfolio application built with TypeScript, Tailwind CSS, and Next.js 14.
+**Associate Director | Software Engineer | AI & Platform Builder**
 
-## Features
+Welcome to my portfolio! I build scalable systems, intelligent applications, and developer-focused platforms that solve real-world problems.
 
-- **Responsive Design** - Mobile-first approach with smooth responsiveness
-- **Modern UI** - Beautiful gradient backgrounds, smooth animations, and interactive components
-- **Fast Performance** - Optimized with Next.js App Router
-- **TypeScript** - Full type safety with TypeScript
-- **Tailwind CSS** - Utility-first CSS framework for rapid development
+## About Me
 
-## Tech Stack
+With 7+ years of experience in software engineering, I specialize in designing backend architectures, building modern full-stack applications, and integrating AI-powered capabilities into real-world products.
 
-- **Framework**: Next.js 14
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Icons**: lucide-react
-- **Deployment**: Vercel-ready
+My work spans **financial technology**, **enterprise platforms**, **developer tools**, and **intelligent automation systems**.
 
-## Getting Started
+Currently, I'm an Associate Director at UBS, contributing to building robust financial technology platforms that power analytics, decision-making, and scalable infrastructure.
 
-### Prerequisites
+### Areas of Focus
 
-- Node.js 18+
-- npm or yarn
+- **Backend Systems & Microservices** - Scalable, maintainable architecture
+- **AI & LLM Integrations** - RAG systems, prompt engineering, intelligent automation
+- **Developer Platforms & APIs** - Creating tools for engineers
+- **Data Systems & Analytics** - Data pipelines and analytics platforms
+- **Full Stack Web Applications** - End-to-end product development
 
-### Installation
+## Technology Stack
 
-1. Install dependencies:
+**Languages:** Python, JavaScript, TypeScript  
+**Frameworks:** FastAPI, Django, Node.js, React  
+**Databases:** PostgreSQL, MongoDB, MySQL, Redis, Vector Databases  
+**Cloud & Tools:** AWS, Docker, CI/CD, Git  
+**AI Stack:** OpenAI APIs, RAG systems, LangChain, LLM integrations
 
-```bash
-npm install
-```
+## Featured Projects
 
-2. Start the development server:
+- **AI Knowledge Assistant** - RAG system for contextual document retrieval
+- **Portfolio Analytics Platform** - Financial analytics tool for investment analysis
+- **Enterprise Recommendation Engine** - AI-powered storage solution recommendations
+- **LLM-Powered Infrastructure Assistant** - Intelligent infrastructure management chatbot
 
-```bash
-npm run dev
-```
+## Professional Experience
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser
+- **Associate Director** - UBS (Present)
+- **Senior Software Engineer** - Franklin Templeton
+- **Lead Engineer** - Hitachi Vantara
+- **Senior Engineer** - Vaave
 
-## Available Scripts
+## Connect With Me
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
+- **Email:** sarathvadlamannati@gmail.com
+- **LinkedIn:** linkedin.com/in/sarath-vadlamannati
+- **GitHub:** github.com/sarathvad1811
+
+Open to conversations about engineering leadership, AI & platform engineering projects, speaking engagements, and developer collaborations.
+
+---
+
+This portfolio is built with [Next.js 14](https://nextjs.org/), [React](https://react.dev/), [TypeScript](https://www.typescriptlang.org/), and [Tailwind CSS](https://tailwindcss.com/).
 
 ## Project Structure
 
