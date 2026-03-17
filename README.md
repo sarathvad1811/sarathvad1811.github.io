@@ -57,7 +57,7 @@ This portfolio is built with [Next.js 14](https://nextjs.org/), [React](https://
 ## Project Structure
 
 ```
-violet-port/
+sarathvad1811.github.io/
 ├── app/
 │   ├── components/
 │   │   ├── Hero.tsx
