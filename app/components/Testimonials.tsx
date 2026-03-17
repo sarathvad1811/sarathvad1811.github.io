@@ -1,5 +1,7 @@
 "use client";
 
+import { motion } from "motion/react";
+
 export default function Experience() {
   const experiences = [
     {
@@ -46,29 +48,105 @@ export default function Experience() {
   return (
     <section className="py-20 px-8 md:px-16 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-16">
+        <motion.h2
+          className="text-4xl md:text-5xl font-bold text-gray-900 mb-16"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: false, margin: "-50px" }}
+        >
           Experience.
-        </h2>
+        </motion.h2>
 
         {experiences.map((exp, index) => (
-          <div key={index} className="mb-16 last:mb-0">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+          <motion.div
+            key={index}
+            className="mb-16 last:mb-0 relative"
+            initial={{ opacity: 0, x: -40, rotateY: -10 }}
+            whileInView={{ opacity: 1, x: 0, rotateY: 0 }}
+            transition={{ duration: 0.7, delay: index * 0.15, ease: "easeOut" }}
+            viewport={{ once: false, margin: "-50px" }}
+          >
+            <motion.div
+              className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-purple-600 to-transparent opacity-0"
+              whileHover={{ opacity: 1 }}
+              transition={{ duration: 0.3 }}
+            />
+            <motion.div
+              className="flex flex-col md:flex-row md:items-center md:justify-between mb-6 cursor-pointer group"
+              whileHover={{ paddingLeft: 12 }}
+              transition={{ duration: 0.3 }}
+            >
               <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">
-                  {exp.position} @ {exp.company}
-                </h3>
-                <p className="text-gray-600">{exp.duration}</p>
+                <motion.h3
+                  className="text-2xl font-bold text-gray-900 mb-2"
+                  whileHover={{ color: "#a855f7", x: 5 }}
+                  transition={{ duration: 0.2 }}
+                >
+                  {exp.position} @{" "}
+                  <motion.span
+                    className="text-purple-600"
+                    whileHover={{
+                      scale: 1.05,
+                      textShadow: "0 0 8px rgba(168, 85, 247, 0.5)"
+                    }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    {exp.company}
+                  </motion.span>
+                </motion.h3>
+                <motion.p
+                  className="text-gray-600"
+                  initial={{ opacity: 0.7 }}
+                  whileHover={{ opacity: 1, color: "#a855f7" }}
+                  transition={{ duration: 0.2 }}
+                >
+                  {exp.duration}
+                </motion.p>
               </div>
-            </div>
-            <div className="space-y-3">
+            </motion.div>
+            <motion.div
+              className="space-y-3"
+              variants={{
+                hidden: { opacity: 0 },
+                visible: {
+                  opacity: 1,
+                  transition: {
+                    staggerChildren: 0.08
+                  }
+                }
+              }}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: false, margin: "-50px" }}
+            >
               {exp.descriptions.map((desc, idx) => (
-                <div key={idx} className="flex gap-4">
-                  <div className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"></div>
-                  <p className="text-gray-700 leading-relaxed">{desc}</p>
-                </div>
+                <motion.div
+                  key={idx}
+                  className="flex gap-4 group cursor-default relative"
+                  variants={{
+                    hidden: { opacity: 0, x: -25 },
+                    visible: { opacity: 1, x: 0 }
+                  }}
+                  whileHover={{ x: 12, paddingRight: 8 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                >
+                  <motion.div
+                    className="w-2 h-2 bg-purple-600 rounded-full mt-2 flex-shrink-0"
+                    whileHover={{ scale: 1.8, rotate: 360 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 10 }}
+                  />
+                  <motion.p
+                    className="text-gray-700 leading-relaxed"
+                    whileHover={{ color: "#a855f7" }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    {desc}
+                  </motion.p>
+                </motion.div>
               ))}
-            </div>
-          </div>
+            </motion.div>
+          </motion.div>
         ))}
       </div>
     </section>
